@@ -9,4 +9,4 @@
 
 
 
-Author: (Ousmane Sangary)[https://www.github.com/sangaryousmane]
+Author: [Ousmane Sangary](https://www.github.com/sangaryousmane)
