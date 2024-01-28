@@ -19,11 +19,12 @@ jobs:
       - name: Update Setuptools
         run: |
           python -m pip install --upgrade setuptools
-
-      - name: Install dependencies
+          
+      - name: Clear pip Cache and Reinstall Requirements
         run: |
           python -m pip install --upgrade pip
-          pip install -r ./flask_blog/blog/requirements.txt
+          python -m pip cache purge
+          python -m pip install -r ./flask_blog/blog/requirements.txt
 
       - name: Unit Tests
         run: pytest  # Use the appropriate command for running unit tests in your Flask app
